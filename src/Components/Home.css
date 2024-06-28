@@ -1,0 +1,46 @@
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px; /* Add some padding to the left */
+    color: #fff; /* Ensure text is white by default */
+  }
+  @media (max-width: 768px) {
+    .hero-section {
+      background-size: cover;
+      background-position: center top; /* Adjust as needed */
+    }
+  }
+  
+  .hero-title {
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+  }
+  
+  .hero-description {
+    font-size: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+  }
+  
+  .hero-button {
+    font-size: 22px;
+    border-radius: 50px; /* Make buttons more attractive with rounded corners */
+    padding: 10px 20px; /* Adjust padding */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .hero-button:hover {
+    background-color: #fff; /* Change background color on hover */
+    color: #000; /* Change text color on hover */
+  }
+
+
+  
+
+  
+
+  

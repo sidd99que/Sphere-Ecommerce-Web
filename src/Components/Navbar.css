@@ -1,0 +1,93 @@
+/* Navbar.css */
+
+.navbar-custom {
+  background-color: transparent !important;
+  border: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand-custom  {
+  color: #fff !important;
+  
+}
+
+.navbar-brand-text
+{
+  color: #007bff !important;
+  font-weight: bold;
+  font-size: 50px;
+  
+}
+
+.nav-link-custom {
+  color: #fff !important;
+}
+
+.nav-link-custom:hover {
+  color: #068377 !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-custom {
+
+  background-color: transparent;
+}
+
+.form-control-custom::placeholder {
+color: rgb(124, 113, 113);
+}
+
+.button-custom {
+  color: #fff;
+  border-color: #fff;
+}
+
+.button-custom:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.icon-text-custom {
+  display: flex;
+  align-items: center;
+}
+
+.icon-text-custom .me-1 {
+  margin-right: 0.5rem;
+}
+
+.nav-link-custom {
+  position: relative;
+  color: white;
+  font-size: 1.2rem; /* Adjust as needed */
+  margin-right: 20px; /* Adjust spacing between links */
+  padding-bottom: 5px; /* Space for the line */
+  text-decoration: none !important; /* Remove default underline */
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thickness of the line */
+  background-color: yellow; /* Color of the line */
+  transition: width 0.3s ease; /* Smooth transition effect */
+}
+
+.nav-link-custom:hover::after,
+.nav-link-custom:focus::after,
+.nav-link-custom:active::after {
+  width: 100%; /* Full width on hover, focus, or active state */
+}
+
+.nav-link-custom.active::after {
+  width: 100%; /* Full width when link is active (for react-router active link) */
+}
